@@ -2,9 +2,9 @@
 ####################### Makefile Template ##############################
 ########################################################################
 # Student settings
-NAME = YOURNAME
-SID = YOURSID
-EMAIL = YOURUTAEMAIL
+NAME = Rommy Gomez
+SID = 1002028364
+EMAIL = nrg8364@mavs.uta.edu
 SEMESTER = SPRING2025
 PROJECT=PROJ03
  
