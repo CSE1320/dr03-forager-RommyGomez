@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import '../styles/pill.css';
 
-const Pill = ({ pilltext }) => {
+const Pill = ({ key, text, type, isEnabled }) => {
     const [selectionState, setSelectionState] = useState("unselected"); // selected, unselected
 
     const clickHandler = () => {
@@ -18,7 +18,7 @@ const Pill = ({ pilltext }) => {
     return (
         <div className='pill' style={{ backgroundColor: bgColor }} onClick={clickHandler}>
             <h1 className='pilltext' style={{ color: textColor }}>
-                Favorites {pilltext}
+                {text}
             </h1>
         </div>
     );

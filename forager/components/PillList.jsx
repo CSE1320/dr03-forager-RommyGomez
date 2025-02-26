@@ -1,15 +1,18 @@
 import React from 'react';
 import Pill from './Pill';
+import {pillData} from '../data/development';
 import '../styles/pill.css';
 
 const PillList = () => {
-    const pillTexts = ["Favorites", "Recents", "Pill 3", "Pill 4"];
-
     return (
         <div>
-            {pillTexts.map((text, index) => (
-                <Pill key={index} pilltext={text} />
-            ))}
+            <ul>
+                <li>
+                {pillData.map((pill, index) => (    
+                    <Pill key={index} text={pill.pilltext} type={pill.pilltype} status={pill.isEnabled} />   
+                ))}
+                </li>
+            </ul>
         </div>
     );
 };
