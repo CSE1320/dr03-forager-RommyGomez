@@ -58,3 +58,50 @@ body, html{
   margin: 30px 30px;
   border-radius: 50px;
 }
+
+.cr{
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.cr > .list {
+  flex: 0 0 33.3%;
+  list-style-type: none;
+}
+
+.list > .polaroid-card{
+  align-items: flex-start;
+  justify-content: center;
+  width: 100px;
+  height: 161px;
+  font-weight: 500;
+  color: #000000;
+  float: left;
+  padding: 20px 9px;
+}
+
+.polaroid-card > .polaroid{
+  background: #FFFFFF;
+  width: 94px;
+  height: 103px;
+  filter: drop-shadow(0px 4px 4px gray);
+  color: #000000;
+  padding: 7px 3px 17px;
+}
+
+.polaroid-card > .title{
+  margin-top: 11px;
+  text-align: center;
+}
+
+.toxic{
+  display: flex;
+  position: relative;
+  top: -100px;
+  left: 6px;
+  width: 16px;
+  height: 14px; 
+  fill: none;
+}
