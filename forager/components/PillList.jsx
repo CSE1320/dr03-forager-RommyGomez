@@ -1,14 +1,14 @@
 import React from 'react';
 import Pill from './Pill';
 import {pillData} from '../data/development';
-import '../styles/pill.css';
+import '../styles/globals.css';
 
-const PillList = () => {
+const PillList = ({ list = [] }) => {
     return (
-        <div>
+        <div className='pill-list'>
             <ul>
                 <li>
-                {pillData.map((pill, index) => (    
+                {list.map((pill, index) => (    
                     <Pill key={index} text={pill.pilltext} type={pill.pilltype} status={pill.isEnabled} />   
                 ))}
                 </li>

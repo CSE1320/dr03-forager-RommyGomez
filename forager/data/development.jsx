@@ -10,6 +10,9 @@ const warningMessage = {
     message: "This is a toxic species, proceed with caution."
 };
 
+const closeButton = {
+    icon: "/icons/X.svg"
+}
 const pillData = [
     {
         pilltext: "Favorites",
@@ -77,4 +80,4 @@ const pillData = [
 // export default dummyData; // Requires import dummyData from './data/development.js';
 
 // More than one export.
-export {warningMessage, dummyData, pillData}; // Requires import {warningMessage, dummyData} from './data/development.js';
+export {closeButton, warningMessage, dummyData, pillData}; // Requires import {warningMessage, dummyData} from './data/development.js';

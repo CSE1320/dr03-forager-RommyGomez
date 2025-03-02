@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import '../styles/pill.css';
+import '../styles/globals.css';
 
 const Pill = ({ key, text, type, isEnabled }) => {
     const [selectionState, setSelectionState] = useState("unselected"); // selected, unselected
