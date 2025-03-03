@@ -1,6 +1,5 @@
 import React from 'react';
 import Pill from './Pill';
-import {pillData} from '../data/development';
 import '../styles/globals.css';
 
 const PillList = ({ list = [] }) => {

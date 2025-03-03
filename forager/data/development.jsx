@@ -76,8 +76,40 @@ const pillData = [
     }
 ]
 
+const mushroomData = [
+    {
+        name: "Death Cap",
+        image: "images/deathCap.jpg",
+        alt: "A Death Cap on a pile of leaves",
+        isToxic: true
+    },
+    {
+        name: "Paddy Straw",
+        image: "images/paddyStraw.jpg",
+        alt: "Two Paddy Straws on a pile of dirt",
+        isToxic: false
+    },
+    {
+        name: "Destroying Angel",
+        image: "images/destroyingAngel.jpg",
+        alt: "A Destroying Angel atop decaying wood",
+        isToxic: true
+    },
+    {
+        name: "False Death Cap",
+        image: "images/falseDeathCap.jpg",
+        alt: "A False Death Cap on a pile of leaves",
+        isToxic: true
+    },
+    {
+        name: "Puffball",
+        image: "images/puffball.jpg",
+        alt: "Three Puffballs atop decaying wood",
+        isToxic: false
+    }
+]
 // Two flavors of exporting:
 // export default dummyData; // Requires import dummyData from './data/development.js';
 
 // More than one export.
-export {closeButton, warningMessage, dummyData, pillData}; // Requires import {warningMessage, dummyData} from './data/development.js';
+export {closeButton, warningMessage, dummyData, pillData, mushroomData}; // Requires import {warningMessage, dummyData} from './data/development.js';

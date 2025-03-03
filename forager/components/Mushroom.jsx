@@ -1,18 +1,33 @@
 import React from 'react';
 import '../styles/globals.css';
 
-const Mushroom = ({ name, image, alt, toxic }) => {
-    return (
-    <div className="list">
+const Mushroom = ({ name, image, alt, isToxic, isCard }) => {
+    if (isCard == true) {
+        return (
         <li className="polaroid-card">
             <div className="polaroid">
-                <img src="../public/DeathCap.jpg" alt="A death cap on top of dried wood" />
-                <img className="toxic" src="icons/icon_warning.svg" alt="This is a toxic mushroom!" />
+                <img src={image} alt={alt}/>
+                { isToxic ? <img className="toxic" src="icons/icon_toxic.svg" alt="This is a toxic mushroom!" /> : null }
             </div>
-            <p className="title">Death Cap</p>
+            <p className="mush-title">{name}</p>
         </li>
-    </div>
-    );
-}
+        );
+    } else if (isCard == false) {
+        return (
+        <div className="polaroid">
+            <img src="images/deathCap.jpg" alt="A death cap on top of dried wood" />
+            <img className="toxic" src="icons/icon_toxic.svg" alt="This is a toxic mushroom!" />
+            <p className="mush-title">Death Cap</p>
+        </div>
+        );
+    } else {
+        return (
+            <div>
+                <p className="error text-center">An error has occured. isCard is neither true nor false</p>
+            </div>
+        );
+    }
+};
+
 
 export default Mushroom;

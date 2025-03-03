@@ -1,7 +1,7 @@
 import React from 'react';
 import Pill from './Pill';
 import PillList from './PillList';
-import {pillData, closeButton} from '../data/development';
+import {pillData} from '../data/development';
 import '../styles/globals.css';
 
 const FilterSettings = () => {
